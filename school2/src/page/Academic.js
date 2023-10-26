@@ -7,9 +7,7 @@ import AcademicNav from '../components/AcademicNav';
 const Academic = () => {
     return (
         <div id="academic">
-            <div className="top-text">
-                <h2>ACADEMICS</h2>
-            </div>
+            
             <AcademicNav/>
             <Routes>
                 <Route path='/academic/subjeect' Component={Subject}/>

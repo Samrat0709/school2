@@ -42,9 +42,9 @@ function App() {
         <Route path='/admission' Component={Admission} />
         <Route path='/calendar' Component={Calendar} />
         <Route path='/academic' Component={Academic} />
-        {/* <Route path={'/academic/subject'} Component={Subject} />
-        <Route path={'/academic/question'} Component={Question} />
-        <Route path={'/academic/paper'} Component={Paper} /> */}
+        <Route path={'/academic/subject'} Component={Subject} />
+        <Route path={'/academic/'} Component={Question} />
+        <Route path={'/academic/paper'} Component={Paper} />
       </Routes>
       <Footer />
     </div>

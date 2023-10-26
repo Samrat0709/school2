@@ -88,10 +88,10 @@ const Gallery = () => {
                     slidesPerView={8}
                     spaceBetween={30}
                     freeMode={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[FreeMode, Pagination]}
+                    // pagination={{
+                    //     clickable: true,
+                    // }}
+                    modules={[FreeMode]}
                     className="mySwiper"
                 >
                     <SwiperSlide><button>2020</button></SwiperSlide>
