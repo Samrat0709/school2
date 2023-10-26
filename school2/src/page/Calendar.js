@@ -1,13 +1,14 @@
 import React from 'react';
+import '../Calendar.css';
 import Cal from '../img/cal.svg';
 import calQoute from '../img/cal-qoute.svg';
 import eventImg from '../img/event.webp';
 import personImg from '../img/student.webp';
-import EventsContent from '../components/EventsContent';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination } from 'swiper/modules';
+import { Outlet , NavLink } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -25,12 +26,13 @@ const Calendar = () => {
                 <div className="box cal-box1">
                     <div className="head">
                         <ul>
-                            <li>Ongoing</li>
-                            <li className='select'>Upcoming</li>
-                            <li>Completed</li>
+                            <li><NavLink to='/calendar/ongoing' activeClassName="active" exact>Ongoing</NavLink></li>
+                            <li><NavLink to='/calendar/'  activeClassName="active" exact >Upcoming</NavLink></li>
+                            <li><NavLink to='/calendar/complete' activeClassName="active" exact>Complete</NavLink></li>
                         </ul>
+                        <Outlet />
                     </div>
-                    <EventsContent />
+                    
                 </div>
                 <div className=" cal-box2">
                     <div className="top">

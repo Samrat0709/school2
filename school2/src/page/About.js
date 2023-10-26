@@ -1,4 +1,5 @@
 import React from 'react';
+import '../About.css';
 import sclFound from '../img/scl-found.webp';
 import newConstruction from '../img/construction.webp';
 import newProgram from '../img/program.webp';

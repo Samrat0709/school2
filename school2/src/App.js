@@ -1,14 +1,6 @@
 
 import './App.css';
-import './Faculty.css';
-import './Achievement.css';
-import './Contact.css';
 import './Media.css';
-import './About.css';
-import './Gallery.css';
-import './Admission.css';
-import './Calendar.css';
-import './Academics.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer';
 import React from 'react';
@@ -26,6 +18,7 @@ import Academic from './page/Academic';
 import Subject from './components/Subject';
 import Question from './components/Question';
 import Paper from './components/Paper';
+import EventsContent from './components/EventsContent';
 
 
 function App() {
@@ -33,18 +26,28 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/' Component={Home} />
+        <Route path='/' Component={Home} >
+          <Route path='/' element={<EventsContent />} />
+          <Route path="ongoing" element={<EventsContent />} />
+          <Route path="complete" element={<EventsContent />} />
+        </Route>
         <Route path='/faculty' Component={Faculty} />
         <Route path='/achievement' Component={Achievements} />
         <Route path='/contact' Component={Contact} />
         <Route path='/about' Component={About} />
         <Route path='/gallery' Component={Gallery} />
         <Route path='/admission' Component={Admission} />
-        <Route path='/calendar' Component={Calendar} />
+
         <Route path='/academic' Component={Academic} />
         <Route path={'/academic/subject'} Component={Subject} />
         <Route path={'/academic/'} Component={Question} />
         <Route path={'/academic/paper'} Component={Paper} />
+
+        <Route path='/calendar/' element={<Calendar />}>
+          <Route path='/calendar/' element={<EventsContent />} />
+          <Route path="ongoing" element={<EventsContent />} />
+          <Route path="complete" element={<EventsContent />} />
+        </Route>
       </Routes>
       <Footer />
     </div>

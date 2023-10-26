@@ -29,7 +29,7 @@ const NavBar = () => {
                                     Separated link
                                 </NavDropdown.Item>
                             </NavDropdown> */}
-                            <Nav.Link href="/academic">Academics</Nav.Link>
+                            <Nav.Link href="/academic/">Academics</Nav.Link>
                             <Nav.Link href="/admission">Admission</Nav.Link>
                             {/* <NavDropdown title="Admissions" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -70,7 +70,7 @@ const NavBar = () => {
                             </NavDropdown> */}
                             <Nav.Link href="#home">Rules & Regulationss</Nav.Link>
                             <Nav.Link href="/gallery">Gallery</Nav.Link>
-                            <Nav.Link href="/calendar">Calender</Nav.Link>
+                            <Nav.Link href="/calendar/">Calender</Nav.Link>
                             <Nav.Link href="/contact">Contact Us</Nav.Link>
                             {/* <NavDropdown title="Contact Us" id="basic-nav-dropdown">
                                 <NavDropdown.Item href="/contact">Action</NavDropdown.Item>

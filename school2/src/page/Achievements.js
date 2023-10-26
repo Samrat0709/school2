@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../Achievement.css';
 import Achievement from '../img/achievements.webp';
 import sport1 from '../img/sport1.webp';
 

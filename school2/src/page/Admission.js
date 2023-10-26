@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../Admission.css';
 const Admission = () => {
     const [isVisible1, setIsVisible1] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);

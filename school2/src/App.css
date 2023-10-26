@@ -221,7 +221,21 @@
   line-height: normal;
 }
 
+.box .head a {
+  text-decoration: none;
+  color: #000;
+}
+
 .select {
+  text-decoration: none;
+  border-radius: 54.591px;
+  background: #000745;
+  color: #fff !important;
+  padding: 0.4rem 1rem;
+}
+
+.active {
+  text-decoration: none;
   border-radius: 54.591px;
   background: #000745;
   color: #fff !important;
@@ -946,20 +960,25 @@ oter starts here  */
 @media only screen and (max-width: 900px) {
   .navbar-brand {
     width: 70% !important;
-    padding: 1rem  !important;
+    padding: 1rem !important;
     margin-left: 0 !important;
     justify-content: flex-start;
     gap: 0.5rem;
   }
-  .navbar-expand-lg .navbar-nav{
+
+  .navbar-expand-lg .navbar-nav {
     padding: 1rem !important;
   }
-  .navbar-nav .dropdown-menu{
+
+  .navbar-nav .dropdown-menu {
     background-color: #0013BD;
   }
-  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link.show {
     color: #fff;
   }
+
   .navbar>.container,
   .navbar>.container-fluid,
   .navbar>.container-lg,
@@ -1034,9 +1053,11 @@ oter starts here  */
   .box .top .date h4 {
     font-size: 4vw;
   }
-  .box .top .date span{
+
+  .box .top .date span {
     font-size: 8vw;
   }
+
   .box .event {
     display: flex;
     flex-direction: column;

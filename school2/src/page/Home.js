@@ -1,9 +1,9 @@
 import React from 'react';
 import topImg from '../img/top.webp';
 import blue from '../img/blue_box.webp';
-
+import { NavLink , Outlet } from 'react-router-dom';
 import scl from '../img/scl.webp';
-import {  faDownload, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faDownload, faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Professor from '../components/Professor';
 import AcademicHeights from '../components/AcademicHeights';
@@ -15,7 +15,7 @@ import Talks from '../components/Talks';
 
 const Home = () => {
 
-    
+
 
     return (
         <div id='home'>
@@ -50,12 +50,13 @@ const Home = () => {
                 <div className="box">
                     <div className="head">
                         <ul>
-                            <li>Ongoing</li>
-                            <li className='select'>Upcoming</li>
-                            <li>Completed</li>
+                            <li><NavLink to='/ongoing' activeClassName="active" exact>Ongoing</NavLink></li>
+                            <li><NavLink to='/' activeClassName="active" exact >Upcoming</NavLink></li>
+                            <li><NavLink to='/complete' activeClassName="active" exact>Complete</NavLink></li>
                         </ul>
+                        <Outlet />
                     </div>
-                    <EventsContent/>
+                    <EventsContent />
                 </div>
                 <div className="box">
                     <div className="head">
@@ -95,7 +96,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Professor/>
+            <Professor />
             <div className="about-scl">
                 <img src={blue} alt="" className='blue' />
                 <div className="left">
@@ -114,9 +115,9 @@ const Home = () => {
 
                 </div>
             </div>
-            <Numbers/>
-            <AcademicHeights/>
-            <Talks/>
+            <Numbers />
+            <AcademicHeights />
+            <Talks />
         </div>
     )
 

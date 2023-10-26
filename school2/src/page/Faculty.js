@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../Faculty.css';
 import Box from '../img/box.webp';
 import Image from '../img/Vector.svg';
 import Professor from '../components/Professor';

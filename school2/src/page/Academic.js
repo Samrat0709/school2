@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../Academics.css';
 import { Route, Routes } from 'react-router-dom';
 import Subject from '../components/Subject';
 import Question from '../components/Question';

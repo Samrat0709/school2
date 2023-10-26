@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Contact.css';
 import Red from '../img/red.webp';
 import Map from '../img/map.webp';
 import Bus from '../img/bus.webp';
