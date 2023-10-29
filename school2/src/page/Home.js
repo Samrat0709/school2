@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Professor from '../components/Professor';
 import AcademicHeights from '../components/AcademicHeights';
 import Numbers from '../components/Numbers';
-import EventsContent from '../components/EventsContent';
 import Talks from '../components/Talks';
 
 
@@ -56,7 +55,7 @@ const Home = () => {
                         </ul>
                         <Outlet />
                     </div>
-                    <EventsContent />
+                    {/* <EventsContent /> */}
                 </div>
                 <div className="box">
                     <div className="head">
