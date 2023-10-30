@@ -1330,11 +1330,18 @@ oter starts here  */
 
   .footer .top {
     flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .footer .top .items{
+    align-items: center;
   }
 
 
   .footer .bottom {
     padding: 0;
+  }
+  .footer .bottom p{
+    font-size: 0.8rem;
   }
 
 
