@@ -66,7 +66,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div className="event-buttons">
+            {/* <div className="event-buttons">
                 <button>Republic Day</button>
                 <button>Saraswati Puja</button>
                 <button>Indipendence Day</button>
@@ -112,7 +112,7 @@ const Gallery = () => {
                     <SwiperSlide><button>2020</button></SwiperSlide>
 
                 </Swiper>
-            </div>
+            </div> */}
             <div className="event-slider">
                 <div className="text">
                     <h3>Saraswati Puja 2023</h3>

@@ -18,6 +18,14 @@ import Persons from '../components/Persons';
 import Talks from '../components/Talks';
 
 
+import { FreeMode } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
 const About = () => {
     return (
 
@@ -36,7 +44,7 @@ const About = () => {
                     <span>Railway Higher Secondary</span>
                     <span>School Alipurduar Junction</span>
                 </div>
-                <p> <br /> <br /> <br /> </p>
+                {/* <p> <br /> <br /> <br /> </p> */}
                 <img src={aboutTop} alt="" />
             </div>
             <div id="legacy-container">
@@ -168,46 +176,116 @@ const About = () => {
                     <p>Dentistry for Children believes that good dental health starts in infancy. Our dedicated pediatric dentists and teen dental specialists promote cavity prevention and good dental habits to help create a positive experience at an early age and into their adolescent years.</p>
                 </div>
                 <div className="community">
-                    <div className="community-left">
-                        <div className="people">
+                    <div className="principle people">
+                        <div className="txt">
                             <h4>Principal</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam eget varius bibendum, velit elit </p>
                             <h5>Contact details : 9234234230 <br /> Mail id : xyz@gmail.com</h5>
                         </div>
-                        <div className="people">
+                        <Persons />
+                    </div>
+                    <div className="teachers people">
+                        <div className="txt">
                             <h4>Teachers</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam eget varius bibendum, velit elit </p>
                             <h5>Contact details : 9234234230 <br /> Mail id : xyz@gmail.com</h5>
                         </div>
-                        <div className="people">
+                        <Swiper
+
+                            slidesPerView={1}
+                            spaceBetween={30}
+                            freeMode={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            modules={[FreeMode]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+
+                        </Swiper>
+                    </div>
+                    <div className="staffs people">
+                        <div className="txt">
                             <h4>Staffs</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam eget varius bibendum, velit elit </p>
                             <h5>Contact details : 9234234230 <br /> Mail id : xyz@gmail.com</h5>
                         </div>
-                        <div className="people">
+                        <Swiper
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            freeMode={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            modules={[FreeMode]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+
+                        </Swiper>
+                    </div>
+                    <div className="others people">
+                        <div className="txt">
                             <h4>Others</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, diam eget varius bibendum, velit elit </p>
                             <h5>Contact details : 9234234230 <br /> Mail id : xyz@gmail.com</h5>
                         </div>
-                    </div>
-                    <div className="community-right">
-                        <div className="person-container">
-                            <Persons />
-                        </div>
-                        <div className="person-container">
-                            <Persons />
-                            <Persons />
-                            <Persons />
-                        </div>
-                        <div className="person-container">
-                            <Persons />
-                            <Persons />
-                        </div>
-                        <div className="person-container">
-                            <Persons />
-                            <Persons />
-                            <Persons />
-                        </div>
+                        <Swiper
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            freeMode={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            modules={[FreeMode]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+                            <SwiperSlide><Persons /></SwiperSlide>
+
+                        </Swiper>
                     </div>
                 </div>
 

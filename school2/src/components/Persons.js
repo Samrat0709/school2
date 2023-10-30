@@ -6,7 +6,7 @@ const Persons = () => {
             <div className="img-container">
                 <img src={Teacher} alt="" />
             </div>
-            <div className="text">
+            <div className="person-text">
                 <h5>dr. Strange </h5>
                 <h6>(M.Tech in DS)</h6>
             </div>
