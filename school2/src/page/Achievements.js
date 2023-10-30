@@ -7,6 +7,14 @@ import person2 from '../img/person2.webp';
 import AcademicHeights from '../components/AcademicHeights';
 import Numbers from '../components/Numbers';
 
+import { FreeMode } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+
 const Achievements = () => {
     return (
 
@@ -26,83 +34,147 @@ const Achievements = () => {
                 <div className="sports">
                     <h3>SPORTS MAESTRO</h3>
                     <div className="students">
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
+                        <Swiper
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            freeMode={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            modules={[FreeMode]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
+
+
                     </div>
                 </div>
                 <div className="extra-curricular">
                     <h3>EXTRA CURRICULAR</h3>
                     <div className="students">
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
-                        <div className="student">
-                            <div className="img-container">
-                                <img src={person2} alt="" />
-                            </div>
-                            <div className="text">
-                                <h4>Kenny Omega </h4>
-                                <h5>99.96(CBSE 12th)</h5>
-                            </div>
-                        </div>
+                        <Swiper
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            freeMode={false}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 20,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 40,
+                                },
+                                1024: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                },
+                            }}
+                            modules={[FreeMode]}
+                            className="mySwiper"
+                        >
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div className="student">
+                                    <div className="img-container">
+                                        <img src={person2} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h4>Kenny Omega </h4>
+                                        <h5>99.96(CBSE 12th)</h5>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                        </Swiper>
                     </div>
                 </div>
             </div>
@@ -179,13 +251,13 @@ const Achievements = () => {
                             </div>
                             <div className="event-right">
                                 <div className="event">
-                                    <img src={sport1} alt="" />  
+                                    <img src={sport1} alt="" />
                                 </div>
                                 <div className="event">
-                                    <img src={sport1} alt="" />   
+                                    <img src={sport1} alt="" />
                                 </div>
                                 <div className="event">
-                                    <img src={sport1} alt="" />  
+                                    <img src={sport1} alt="" />
                                 </div>
                                 <div className="event">
                                     <img src={sport1} alt="" />

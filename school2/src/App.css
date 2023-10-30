@@ -1311,6 +1311,10 @@ oter starts here  */
   .slide .name {
     gap: 0.2rem;
   }
+  .academic h3{
+    text-align: center;
+    font-size: 2rem;
+  }
 
   .footer {
     gap: 3rem;
@@ -1320,10 +1324,14 @@ oter starts here  */
     gap: 0.5rem;
     flex-direction: column;
   }
+  .footer .top .items p{
+    text-align: center;
+  }
 
   .footer .top {
     flex-wrap: wrap;
   }
+
 
   .footer .bottom {
     padding: 0;

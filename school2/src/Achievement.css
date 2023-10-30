@@ -90,6 +90,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 3rem;
+    width: 100%;
 }
 
 .students .student {
@@ -309,13 +310,13 @@
         gap: 1rem;
     }
     .events-container h3{
-        font-size: 8vw;
+        font-size: 7vw;
     }
     .qoute{
         padding: 2rem;
     }
     .qoute h2, .qoute p{
-        font-size: 13vw;
+        font-size: 11vw;
         width: 100%;
     }
     .students .student{
