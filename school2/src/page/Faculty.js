@@ -4,7 +4,13 @@ import Box from '../img/box.webp';
 import Image from '../img/Vector.svg';
 import Professor from '../components/Professor';
 import Persons from '../components/Persons';
+import { FreeMode } from 'swiper/modules';
 
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
 
 const Faculty = () => {
     return (
@@ -29,14 +35,33 @@ const Faculty = () => {
                 </div>
                 <div className="teachers">
                     <img src={Box} alt="" className='square' />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
+                    <Swiper
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        freeMode={false}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        modules={[FreeMode]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+
+                    </Swiper>
                 </div>
             </div>
             <div className="lab-container">
@@ -46,14 +71,34 @@ const Faculty = () => {
                 </div>
                 <div className="lab">
                     <img src={Box} alt="" className='square' />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
+                    <Swiper
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        freeMode={false}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        modules={[FreeMode]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+
+                    </Swiper>
+
                 </div>
             </div>
             <div className="group-container">
@@ -63,14 +108,33 @@ const Faculty = () => {
                 </div>
                 <div className="group">
                     <img src={Box} alt="" className='square' />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
-                    <Persons />
+                    <Swiper
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        freeMode={false}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                        }}
+                        modules={[FreeMode]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+                        <SwiperSlide><Persons /></SwiperSlide>
+
+                    </Swiper>
                 </div>
             </div>
         </div>

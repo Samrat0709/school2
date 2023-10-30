@@ -9,7 +9,9 @@
     justify-content: space-between;
     padding: 3rem 0;
 }
-
+.swiper-backface-hidden .swiper-slide{
+    background: transparent;
+}
 #faculty .top .img {
     width: 50%;
     padding-right: 3rem;
@@ -99,9 +101,9 @@
 .teachers-container .teachers .square {
     position: absolute;
     z-index: -2;
-    height: 50%;
+    height: 60%;
     width: 100%;
-    bottom: 30%;
+    bottom: 15%;
 }
 
 .teachers-container .teachers .person {
@@ -360,7 +362,7 @@
         margin: 0;
     }
     #faculty .top{
-        padding: 1rem 0;
+        padding:  0;
     }
     #faculty .top .text{
         padding: 1rem;
@@ -371,8 +373,17 @@
     #faculty .top .img{
         display: none;
     }
-    .teachers-container{
+    .lab-container .lab-top h4,
+    .teachers-container .teacher-top h4,
+    .group-container .group-top h4{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .teachers-container,
+    .lab-container,
+    .group-container{
         gap: 0;
+        padding: 0;
     }
     .teachers-container .teacher-top h6{
         width: 100%;

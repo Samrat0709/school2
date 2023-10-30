@@ -1314,6 +1314,11 @@ oter starts here  */
 
   .footer {
     gap: 3rem;
+    padding: 2rem;
+  }
+  .footer .top .items .address, .email, .call{
+    gap: 0.5rem;
+    flex-direction: column;
   }
 
   .footer .top {
