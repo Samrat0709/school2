@@ -7,6 +7,15 @@
     padding: 3rem 0;
 }
 
+#admission h3 {
+    color: #000;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
 #admission .top-text h2 {
     text-align: center;
     color: #000;
@@ -103,7 +112,7 @@
 
 .text li {
     color: #000;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -144,4 +153,46 @@
 .fill:hover::after {
     top: 0px;
     left: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+    #admission .top-text {
+        padding: 1rem 0;
+    }
+
+    #admission .top-text h2 {
+        font-size: 3rem;
+    }
+    #admission #text{
+        padding: 0 1rem;
+    }
+    #admission h3{
+        font-size: 1.3rem;
+    }
+    #admission #text p{
+        width: auto;
+        font-size: 0.8rem;
+    }
+    .fill{
+        width: 50vw;
+        font-size: 1rem;
+    }
+    .step .arrow svg{
+        height: 15vh;
+    }
+    .step-btn-container{
+        padding: 2rem 1rem;
+    }
+    .step .text{
+        padding: 1rem;
+    }
+    .text h4{
+        font-size: 1rem;
+    }
+    .text li{
+        font-size: 0.7rem;
+    }
+    .text h5{
+        font-size: 0.9rem;
+    }
 }
