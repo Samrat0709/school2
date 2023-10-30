@@ -18,7 +18,7 @@ import gal8 from '../img/gal8.webp';
 import gal9 from '../img/gal9.webp';
 
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import {  Pagination } from 'swiper/modules';
 
 const Gallery = () => {
     return (

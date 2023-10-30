@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart, faShareNodes } from "@fortawesome/free-solid-svg-icons";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FreeMode, Pagination } from 'swiper/modules';
-import { Outlet , NavLink } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
@@ -27,12 +27,12 @@ const Calendar = () => {
                     <div className="head">
                         <ul>
                             <li><NavLink to='/calendar/ongoing' activeClassName="active" exact>Ongoing</NavLink></li>
-                            <li><NavLink to='/calendar/'  activeClassName="active" exact >Upcoming</NavLink></li>
+                            <li><NavLink to='/calendar/' activeClassName="active" exact >Upcoming</NavLink></li>
                             <li><NavLink to='/calendar/complete' activeClassName="active" exact>Complete</NavLink></li>
                         </ul>
                         <Outlet />
                     </div>
-                    
+
                 </div>
                 <div className=" cal-box2">
                     <div className="top">
@@ -49,9 +49,15 @@ const Calendar = () => {
                 <h3>On This Day</h3>
                 <div className="event-conatiner">
                     <Swiper
-                        slidesPerView={2}
+                        slidesPerView={1}
                         spaceBetween={30}
-                        freeMode={true}
+                        freeMode={false}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 2,
+                                spaceBetween: 20,
+                            },
+                        }}
                         pagination={{
                             clickable: true,
                         }}
@@ -158,9 +164,15 @@ const Calendar = () => {
             <div className="birthday">
                 <h3>Birthdays</h3>
                 <Swiper
-                    slidesPerView={2}
+                    slidesPerView={1}
                     spaceBetween={30}
-                    freeMode={true}
+                    freeMode={false}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                            spaceBetween: 20,
+                        },
+                    }}
                     pagination={{
                         clickable: true,
                     }}

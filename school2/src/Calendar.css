@@ -187,6 +187,11 @@
     font-weight: 400;
     line-height: normal;
 }
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 .birthday {
     display: flex;
@@ -322,4 +327,66 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+
+@media only screen and (max-width:900px){
+    #calendar .top-text{
+        padding: 1rem ;
+    }
+    #calendar .top-text h2{
+        font-size: 3rem;
+    }
+    #calendar .top-text h3{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    .middle-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    .onThisDay{
+        padding: 1rem;
+    }
+    .onThisDay .card{
+        padding: 1rem;
+        height: auto;
+    }
+    .card-bottom{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-left{
+        gap: 1rem;
+    }
+    .card-top span{
+        width: 25vw;
+        font-size: 0.9rem;
+        border-radius: 10px;
+    }
+    .birthday{
+        padding: 2rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .birthday-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .birthday-card .b-card{
+        padding: 1rem;
+    }
+    .birthday-card .b-card .name{
+        padding: 0;
+    }
+    .send-buttons .msg ,
+    .send-buttons .gift{
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    .birthday h3{
+        font-size: 2rem;
+    }
 }
