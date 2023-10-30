@@ -222,3 +222,84 @@
 #academicQuestion .class {
     padding: 2rem 0;
 }
+
+@media only screen and (max-width: 900px){
+    #academicNav{
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+    #academicNav .top-text h2{
+        font-size: 3rem;
+        margin: 0;
+    }
+    #academicNav .banner li{
+        width: 30vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    #academicNav .banner li a{
+        font-size: 0.6rem;
+    }
+    #academicNav .banner li .active{
+        padding: 0.5rem;
+    }
+    #academicQuestion .class{
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .class tr{
+        width: 45vw !important;
+    }
+    .class h2{
+        font-size: 2rem;
+    }
+    #content .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #content{
+        padding: 1rem;
+    }
+    #content .container .box{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #content .container .box .left-text h4{
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+    #content .container .box .right-text{
+        width: 100%;
+    }
+    #content .container .box .right-text ol{
+        font-size: 0.9rem;
+    }
+    #content .items{
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    #content .items .item li{
+        width: 45%;
+        font-size: 1rem;
+    }
+    #content .items .item ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #content h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    #content .head p{
+        font-size: 0.8rem;
+        width: auto;
+        text-align: center;
+    }
+
+}
